@@ -1,0 +1,60 @@
+h3
+{
+    font-style: italic;
+    font-size: calc(1vh + 1vw);
+}
+h1
+{
+    font-size: calc(2vh + 2vw);
+}
+
+#img-div, #img-div input
+{
+    width: 60vh;
+    height: 60vh;
+    position: fixed;
+    bottom: 20px;
+    right: 10vw;
+    z-index: 0;
+}
+#img-div:hover
+{
+    transform: scale(1.1);
+}
+
+.drag-over
+{
+    opacity: 0.5;
+    scale(1.1);
+}
+
+#audrey-text-box, #errors, #all-good
+{
+    width: 40vh;
+    position: fixed;
+    bottom: calc(50vh + 20px);
+    right: calc(40vh + 10vw);
+}
+#errors, #all-good
+{
+    bottom: calc(50vh + 85px);
+    right: calc(40vh + 7.5vw);
+    font-size: calc(7px + .5vw);
+    z-index: 0;
+    color: #770000 !important;
+
+
+}
+
+#select-error
+{
+
+}
+#from-error
+{
+
+}
+#semicolon-error
+{
+
+}

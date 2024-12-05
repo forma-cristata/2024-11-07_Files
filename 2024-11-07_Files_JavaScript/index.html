@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL Dump</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<h1>Feed me, Seymour! I want more SQL syntax!</h1>
+<h3 class="text-muted">Drag and drop files into Audrey II's mouth.</h3>
+<div id="img-div" class="d-inline-block form-floating">
+    <label></label><input type="file" style="opacity: 0;" accept=".sql" multiple>
+    <img alt="audrey" src="./images/audrey.png" class="w-100">
+</div>
+<div id="audrey-text-box" class="d-inline-block form-floating d-none">
+    <img alt="text-box" src="./images/TextBox.png" class="w-100">
+</div>
+
+<div id="errors">
+    <p id="select-error" class="d-none">X: DOESN'T BEGIN WITH <em>SELECT</em> KEYWORD</p>
+    <p id="from-error" class="d-none">X: CONTAINS THE <em>FROM</em> KEYWORD</p>
+    <p id="semicolon-error" class="d-none">X: ENDS WITH A SEMICOLON</p>
+
+</div>
+<div id="all-good" class="d-none">
+    <p id="all-good-text">YUM, VALID SQL SYNTAX</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="./js/index.mjs" type="module"></script>
+</body>
+</html>
