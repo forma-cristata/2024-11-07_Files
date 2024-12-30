@@ -18,7 +18,7 @@ Meet Audrey, your friendly neighborhood SQL-eating plant! This web application l
 - Detailed feedback - Audrey tells you which files were delicious and which gave her indigestion
 - File type restriction - Audrey only eats .sql files (she's picky!)
 
-## 🛠 Technical Details
+## Technical Details
 
 The application ignores leading and trailing spaces during validation, ensuring Audrey doesn't get fussy about formatting. File selection is restricted to .sql files using the input field's accepts attribute.
 
